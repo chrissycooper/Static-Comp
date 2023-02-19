@@ -4,115 +4,216 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cooper StaticComp</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="webfonts/uicons-regular-straight.css" rel="stylesheet">
     </head>
     <body>
         <aside class="leftnav">
-            <img src="" alt="" class="profile">
-            <p class="name"></p>
+            <div class="profile-pair">
+                <img src="https://images.unsplash.com/photo-1615485291234-9d694218aeb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80" alt="an image of broccoli" class="profile">
+                <p class="name">Brassica oleracea</p>
+            </div>
+            <hr>
             <ul class="left-main">
-                <li class="left-text">GREEN BEAN</li>
-                <li class="left-text">MAIZE</li>
-                <li class="left-text">AZUKI BEAN</li>
-                <li class="left-text">LETTUCE</li>
-                <li class="left-text">AVOCADO</li>
+                
+                <li class="left-greenbean">
+                    <i class=" fi-rs-olives"></i>
+                    OLIVE
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-onion"></i>
+                    ONION
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-pepper"></i>
+                    PEPPER
+                </li>
+                <li class="left-text">
+                    <i class=" fi-rs-pineapple"></i>
+                    PINEAPPLE
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-pumpkin"></i>
+                    PUMPKIN
+                </li>
             </ul>
+            <hr>
             <ul class="left-admin">
-                <li class="left-text">ASPARAGUS</li>
-                <li class="left-text">OKRA</li>
-                <li class="left-text">KOLRABI</li>
-                <li class="left-text">RADISH</li>
-                <li class="left-text">MELON</li>
+                <li class="left-text">
+                    <i class="fi-rs-watermelon"></i>
+                    WATERMELON
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-strawberry"></i>
+                    STRAWBERRY
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-aubergine"></i>
+                    EGGPLANT
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-radish"></i>
+                    RADISH
+                </li>
+                <li class="left-text">
+                    <i class="fi-rs-tomato"></i>
+                    TOMATO
+                </li>
             </ul>
+            <hr>
             <ul class="left-categories">
-                <li class="left-text">SPINACH</li>
-                <li class="left-text">CELERY</li>
-                <li class="left-text">SOKO</li>
-                <li class="left-text">KALE</li>
-                <li class="left-text">DANDELION</li>
+                <input type="checkbox" id="check1" name="check1" value="spinach">
+                <label for="check1">SPINACH</label><br>
+                <input type="checkbox" id="check2" name="check2" value="celery">
+                <label for="check2">CELERY</label><br>
+                <input type="checkbox" id="check3" name="check3" value="swiss-chard">
+                <label for="check3">SWISS CHARD</label><br>
+                <input type="checkbox" id="check4" name="check4" value="purslane">
+                <label for="check4">PURSLANE</label><br>
+                
             </ul>
         </aside>
-        <header>
-            <div class="top-search">
-                <button class="ham"></button>
-                <input type="text" class="search" placeholder="Search for a cruciferous vegetable here">
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            <h1>Cruciferous Vegetables</h1>
-            <p class="location">Chicago, Il</p>
-            <p class="findYourNearest">Find Your Nearest Farmer's Market</p>
-            <div class="save-edit-delete">
-                <button class="open"></button>
-                <button class="save"></button>
-                <button class="edit"></button>
-                <button class="delete"></button>
-            </div>
-        </header>
         <main>
+            <nav class="top-search">
+                <button class="ham"><i class="fi-rs-sandwich"></i></button>
+                <input type="text" class="search" placeholder="Search for a cruciferous vegetable here">
+                <button>
+                    <i class="fi-rs-salt-pepper"></i>
+                </button>
+                <button>
+                    <i class="fi-rs-apple-crate"></i>
+                </button>
+                <button>
+                    <i class="fi-rs-broccoli"></i>
+                </button>
+            </nav>
+            <header>
+                <div class="title">
+                    <h1>Cruciferous Vegetables</h1>
+                    <div class="title-details">
+                        <p class="location">Chicago, Il</p>
+                        <p class="findYourNearest">Find Your Nearest Farmer's Market</p>
+                    </div>
+                </div>
+                <div class="save-edit-delete">
+                    <button class="open">
+                        <i class="fi-rs-carrot"></i>
+                    </button>
+                    <button class="save">
+                        <i class="fi-rs-cherry"></i>
+                    </button>
+                    <button class="edit">
+                        <i class=" fi-rs-cheese"></i>
+                    </button>
+                    <button class="delete">
+                        <i class="fi-rs-coffee"></i>
+                    </button>
+                </div>
+            </header>
             <section class="graphs-sect">
-
+                <div class="pie-and-label">
+                    <div class="pies">
+                        <div class="pie1"></div>
+                        <div class="pie2"></div>
+                        <div class="pie3"></div>
+                    </div>
+                    <button class="pie-totals">totals out of 5,211 views</button>
+                </div>
+                <div class="chart-and-label">
+                    <div class="charts">
+                        <img class="chart" src="https://www.ers.usda.gov/webdocs/charts/87355/us_organic_food_retail_sales_06-16-01_768px.png?v=31.7" alt="a chart of the organic vegetables bought in 2017">
+                    </div>
+                    <button class="chart-label">applicants/day</button>
+                </div>
             </section>
             <section class="bottom">
-                <h2 class="job-desc">CAULIFLOWER FAVA BEAN DESERT RAISIN</h2>
-                <table class="info">
-                    <tr>
-                        <th>MUSTARD</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>BEET</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>WATERCRESS</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>PURSLANE</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>SPRING ONION</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>TOMATO</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>RADICCHIO</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>SORREL</th>
-                        <td class="info"></td>
-                    </tr>
-                    <tr>
-                        <th>NAPA CABBAGE</th>
-                        <td class="info"></td>
-                    </tr>
-                </table>
-                <aside class="links">
-                    <div class="post-buttons">
-                        <button class="post-fb"></button>
-                        <button class="tweet"></button>
-                        <button class="post"></button>
+                <div class="table-box">
+                    <div class="table-title">
+                        <h2 class="job-desc">CAULIFLOWER FAVA BEAN</h2>
+                        <button class="edit-button">edit</button>
                     </div>
-                    <div class="links">
-                        <h4 class="link-to-this">Link to this brassica</h4>
-                        <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion.</p>
-                        <div class="link-copy">
-                            <p>https://youtu.be/-mUeNy0rweM</p>
-                            <button class="copy">Copy</button>
-                        </div>
-                        <h4 class="link-to-this">Use the Button Widget</h4>
+                    <table class="info">
+                        <tr>
+                            <th>MUSTARD</th>
+                            <td class="info"> Sea lettuce gumbo grape kale</td>
+                        </tr>
+                        <tr>
+                            <th>BEET</th>
+                            <td class="info">kombu cauliflower salsify kohlrabi okra sea lettuce</td>
+                        </tr>
+                        <tr>
+                            <th>WATERCRESS</th>
+                            <td class="info">broccoli celery lotus root carrot winter purslane</td>
+                        </tr>
+                        <tr>
+                            <th>PURSLANE</th>
+                            <td class="info">turnip greens garlic. JÃ­cama garlic courgette coriander </td>
+                        </tr>
+                        <tr>
+                            <th>SPRING ONION</th>
+                            <td class="info">adicchio plantain scallion cauliflower fava bean</td>
+                        </tr>
+                        <tr>
+                            <th>TOMATO</th>
+                            <td class="info">"You faker than some Sweet'N Low (Why?)
+                                Yeah, you got some silverware <br>
+                                But really, are you eating though? (Yeah)
+                                Are you eating though? Are you eating though?<br>
+                                Breakfast, lunch, and dinner's for beginners, you ain't even know"<br>
+                                Lyrics by: Childish Gambino from "IV. Sweatpants" clean version</td>
+                            </tr>
+                            <tr>
+                                <th>RADICCHIO</th>
+                                <td class="info">Catsear cauliflower garbanzo yarrow salsify chicory</td>
+                            </tr>
+                            <tr>
+                                <th>SORREL</th>
+                                <td class="info">pea prairie turnip leek lentil turnip greens parsnip</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <aside class="links">
+                        <div class="side-links">
+                            <div class="post-buttons">
+                                <button class="post-fb">
+                                    <i class="fi-rs-corn"></i>
+                                    
+                                </button>
+                                <button class="tweet">
+                                    <i class="fi-rs-croissant"></i>
+                                    
+                                </button>
+                                <button class="post">
+                                    <i class="fi-rs-egg-fried"></i>
+                                    
+                                </button>
+                            </div>
+                            <h4 class="link-to-this">
+                                <i class="fi-rs-earth-asia"></i>
+                                Link to this brassica
+                            </h4>
+                            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion.</p>
+                            <div class="link-copy">
+                                <p>https://youtu.be/-mUeNy0rweM</p>
+                                <button class="copy">Copy</button>
+                            </div>
+                            <hr>
+                            <h4 class="link-to-this">
+                            <i class="fi-rs-earth-africa"></i>
+                            
+                            Use the Button Widget
+                        </h4>
                         <p>Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.</p>
                         <div class="link-copy">
                             <p>https://youtu.be/-mUeNy0rweM</p>
                             <button class="copy">Copy</button>
                         </div>
-                        <h4 class="link-to-this">Upload Recipes by Email</h4>
+                        <hr>
+                        <h4 class="link-to-this">
+                            <i class=" fi-rs-earth-americas"></i>
+                            Upload Recipes by Email
+                        </h4>
                         <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
                         <div class="link-copy">
                             <p>https://youtu.be/-mUeNy0rweM</p>
