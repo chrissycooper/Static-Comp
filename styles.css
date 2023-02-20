@@ -38,7 +38,7 @@ main {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 50px;
 }
 
@@ -68,6 +68,10 @@ header {
 
 .left-text {
     padding: 5px;
+}
+
+.left-greenbean {
+    padding-left: 5px;
 }
 
 /* TOP SEARCH */
@@ -110,6 +114,20 @@ header {
     font-size: 20pt;
 }
 
+.carrot {
+    width: 150px;
+    border-radius: 50px;
+    font-size: 15pt;
+}
+
+.fi-rs-carrot {
+    background-color: orange;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 15pt;
+    margin-right: 20px;
+}
+
 .find-your-nearest {
     color: rgb(135,163,48);
 }
@@ -141,7 +159,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    margin: 0px 30px;
 }
 
 .pie-inner {
@@ -180,6 +198,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 3px;
+
 }
 .pie3 {
     width: 200px;
@@ -189,7 +208,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    margin: 0px 30px;
 }
 
 .graphs-sect {
@@ -245,11 +264,19 @@ header {
 }
 
 /* BOTTOM GENERAL */
+.middle-line {
+    background-color: rgb(202,213,147);
+    color: rgb(202,213,147);
+    border-top: solid 3px rgb(135,163,48);
+    margin: 0px;
+    
+}
 
 .bottom {
     display: flex;
     flex-direction: row;
     background-color: rgb(202,213,147);
+    border: 0px;
 }
 
 /* BOTTOM TABLE */
