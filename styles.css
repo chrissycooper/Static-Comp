@@ -19,18 +19,21 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    border: solid 1px green;
     background-color: rgb(248,249,240);
+    color: rgb(36,48,16);
 }
 
 button {
     border: none;
 }
 
+button:hover {
+    background-color: rgb(135,163,48);
+}
+
 main {
     flex-direction: column;
     width: 100%;
-    border: solid 1px green;
     margin-left: 10vw;
 }
 
@@ -39,23 +42,11 @@ header {
     flex-direction: row;
     justify-content: space-around;
     margin: 50px;
-    border: solid 1px green;
 }
 
-.title-details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.save-edit-delete {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/* LEFT ASIDE */
 
 .leftnav {
-    border: solid 1px green;
     width: 10vw;
     height: 100%;
     position: fixed;
@@ -64,14 +55,140 @@ header {
     z-index: 1;
 }
 
-/* .left-greenbean::before {
-    content: "\f40e";
-} */
+.profile {
+   width: 10vw;
+   clip-path: circle(60px at center);
+}
+
+.profile-pair {
+    vertical-align: middle;
+}
+
+.name {
+    margin-left: 30px;
+}
+
+.left-text {
+    padding: 5px;
+}
+
+/* TOP SEARCH */
+
+.top-search {
+    flex-direction: row;
+    height: 60px;
+    width: 100%
+}
+
+.top-button {
+    background-color:  rgb(248,249,240);
+    border: solid 1px rgb(202,213,147);
+    width: 60px;
+}
+
+.search {
+    width: 84%;
+}
+
+/* TITLE SECTION */
+
+.save-edit-delete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sed-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(202,213,147);
+    margin: 10px;
+}
+
+.find-your-nearest {
+    color: rgb(135,163,48);
+}
+
+/* TAB LIST SECTION */
+.tabs{ 
+    display: flex;
+    padding: 0px;
+    color: rgb(202,213,147);
+    margin: 0px;
+}
+
+.tab {
+    padding: 20px;
+}
+
+.tab1 {
+    color: rgb(36,48,16);
+    border-bottom: solid 1px rgb(36,48,16);
+}
+
+/* GRAPHS SECTION */
+
+.pie1 {
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(rgb(135,163,48) 0 80%, rgb(161,195,73) 0 10%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+.pie-inner {
+    width: 175px;
+    height: 175px;
+    background-color: rgb(202,213,147);
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie-innertext {
+    font-size: 50pt;
+    margin: 0px;
+}
+
+.pie-text-label {
+    font-size: 15pt;
+    margin: 0px;
+}
+
+.pie2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom left, rgb(135,163,48) 50%, rgb(161,195,73) 50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+.pie3 {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(rgb(135,163,48) 0 30%, rgb(161,195,73) 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+
+}
 
 .graphs-sect {
     display: flex;
     height: 40vh;
-    border: solid 1px green;
     background-color: rgb(202,213,147);
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -82,17 +199,49 @@ header {
     width: 300px;
 }
 
-.pies {
-    display: flex;
+.chart-label {
+    padding: 10px;
+    width: 100px;
+    align-self: center;
 }
 
-.pie-and-label,
+.pies {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.pie-and-label {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
 .chart-and-label {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
 }
 
+.title-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie-totals {
+    position: relative;
+    top: 130px;
+    padding: 10px;
+}
+
+/* BOTTOM GENERAL */
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(202,213,147);
+}
+
+/* BOTTOM TABLE */
 
 .table-box {
     display: flex;
@@ -100,7 +249,6 @@ header {
     width: 75%;
     margin: 50px;
     background-color: rgb(248,249,240);
-    border: solid 1px green;
 }
 
 td, th {
@@ -128,81 +276,37 @@ td, th {
     background-color: rgb(135,163,48);
     border: none;
     padding:5px;
-    border: solid 1px green;
     color: white;
 }
-
-.profile {
-   width: 10vw;
-   border: solid 1px green;
-   clip-path: circle(60px at center);
+.edit-button:hover {
+    background-color: rgb(248,249,240);
+    color:rgb(36,48,16);
 }
 
-.profile-pair {
-    vertical-align: middle;
-    border: solid 1px green;
-}
-
-.name {
-    margin-left: 30px;
-}
-
-
-.top-search {
-    border: solid 1px orange;
-    flex-direction: row;
-    /* position: relative; */
-}
-
-.search {
-    width: 75%;
-    border: solid 1px green;
-
-}
-
-.bottom {
-    display: flex;
-    flex-direction: row;
-    border: solid 2px green;
-    background-color: rgb(202,213,147);
-}
+/* BOTTOM LINKS ASIDE */
 
 .post-buttons {
     display:flex;
     flex-direction: column;
-    border: solid 1px green;
+}
 
+.post-fb,
+.tweet,
+.post {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .links {
-    border: solid 2px greenyellow;
     display: flex;
     flex-direction: row;
     width: 40vh;
     margin: 50px;
-    border: solid 1px green;
-
-}
-.pie1 {
-    width: 200px;
-    height: 200px;
-    background: conic-gradient(rgb(135,163,48) 0 80%, rgb(161,195,73) 0 10%);
-    border-radius: 50%;
-}
-.pie2 {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(to bottom left, rgb(135,163,48) 50%, rgb(161,195,73) 50%);
-    border-radius: 50%;
-}
-.pie3 {
-    width: 200px;
-    height: 200px;
-    background: conic-gradient(rgb(135,163,48) 0 30%, rgb(161,195,73) 0);
-    border-radius: 50%;
 }
 
-.graphs-sect {
-    display: flex;
-    border: solid 1px green;
+.copy {
+    padding: 10px;
 }
+
